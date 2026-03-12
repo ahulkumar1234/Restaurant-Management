@@ -127,9 +127,12 @@ const CheckOut = () => {
   const onSwipe = (e) => {
     if (!dragging) return;
 
-    const containerWidth = containerRef.current.offsetWidth - 80; // button width
+    const containerWidth = containerRef.current.offsetWidth - 80;
 
-    const newX = e.clientX - containerRef.current.getBoundingClientRect().left;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+
+    const newX =
+      clientX - containerRef.current.getBoundingClientRect().left;
 
     if (newX >= 0 && newX <= containerWidth) {
       setPosition(newX);
@@ -142,10 +145,10 @@ const CheckOut = () => {
     const containerWidth = containerRef.current.offsetWidth - 80;
 
     if (position >= containerWidth - 10) {
-      createOrder(); // full swipe
+      createOrder();
     }
 
-    setPosition(0); // reset
+    setPosition(0);
   };
 
   return (
