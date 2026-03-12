@@ -13,7 +13,7 @@ const AnalyticsRouter = require("./route/analytics.route")
 connectDB();
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174'],
+    origin: ['https://restaurant-management-nnbm.vercel.app', 'https://restaurant-management-drab.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
