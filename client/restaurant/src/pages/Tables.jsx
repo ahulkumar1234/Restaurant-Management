@@ -85,9 +85,9 @@ const Tables = () => {
           <div className="tables">
             {tables && tables.map(table => (
               <div className="tabel" key={table._id}>
-                <img src="/src/assets/delete.png" alt="Delete" onClick={() => handleDeleteTable(table._id)} />
+                <img src="/assets/delete.png" alt="Delete" onClick={() => handleDeleteTable(table._id)} />
                 <div>
-                  <img className='vector' src="/src/assets/Vector.png" alt="" />
+                  <img className='vector' src="/assets/Vector.png" alt="" />
                   <span className='table-count'>{table.seats}</span>
                 </div>
 

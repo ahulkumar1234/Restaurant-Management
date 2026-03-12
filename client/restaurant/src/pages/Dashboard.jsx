@@ -92,28 +92,28 @@ const Dashboard = () => {
 
                         <div className="boxes">
                             <div className={`box ${!isMatch("Total chef") ? "blur" : ""}`}>
-                                <img src="/src/assets/Image.png" alt="" />
+                                <img src="/assets/Image.png" alt="" />
                                 <div>
                                     <h2>{analytics.totalChefs}</h2>
                                     <p>Total chef</p>
                                 </div>
                             </div>
                             <div className={`box ${!isMatch("Total Revenue") ? "blur" : ""}`}>
-                                <img className="inr" src="/src/assets/ph_currency-inr-bold.png" alt="" />
+                                <img className="inr" src="/assets/ph_currency-inr-bold.png" alt="" />
                                 <div>
                                     <h2>{formatRevenue(analytics.totalRevenue)}</h2>
                                     <p>Total Revenue</p>
                                 </div>
                             </div>
                             <div className={`box ${!isMatch("Total Orders") ? "blur" : ""}`}>
-                                <img src="/src/assets/Image (4).png" alt="" />
+                                <img src="/assets/Image (4).png" alt="" />
                                 <div>
                                     <h2>{analytics.totalOrders}</h2>
                                     <p>Total Orders</p>
                                 </div>
                             </div>
                             <div className={`box ${!isMatch("Total Clients") ? "blur" : ""}`}>
-                                <img src="/src/assets/Image (2).png" alt="" />
+                                <img src="/assets/Image (2).png" alt="" />
                                 <div>
                                     <h2>{analytics.totalClients}</h2>
                                     <p>Total Clients</p>

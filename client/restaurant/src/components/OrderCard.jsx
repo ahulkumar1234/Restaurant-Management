@@ -81,7 +81,7 @@ const OrderCard = ({ order }) => {
         <div className="order-left">
 
           <div className="order-id">
-            <img src="/src/assets/Vector (1).png" alt="" /> # {order.orderId.slice(-4)}
+            <img src="/assets/Vector (1).png" alt="" /> # {order.orderId.slice(-4)}
           </div>
 
           <div className="table-info">
