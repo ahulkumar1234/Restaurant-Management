@@ -7,23 +7,23 @@ const CategoryTab = ({ setSelectedCategory }) => {
     const categories = [
         {
             name: "Pizza",
-            img: "/src/assets/pizza.png"
+            img: "/assets/pizza.png"
         },
         {
             name: "Burger",
-            img: "/src/assets/burger.png"
+            img: "/assets/burger.png"
         },
         {
             name: "French Fries",
-            img: "/src/assets/fries.png"
+            img: "/assets/fries.png"
         },
         {
             name: "Drink",
-            img: "/src/assets/drink.png"
+            img: "/assets/drink.png"
         },
         {
             name: "Veggies",
-            img: "/src/assets/vegies.png"
+            img: "/assets/vegies.png"
         }
     ];
     return (
