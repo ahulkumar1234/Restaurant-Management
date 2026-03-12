@@ -1,4 +1,4 @@
-import "./dashboard.css"
+import "./Dashboard.css"
 import Navbar from "../components/Navbar"
 import { NavLink } from "react-router-dom"
 import Sidebar from "../components/Sidebar"
