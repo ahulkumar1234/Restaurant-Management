@@ -64,7 +64,7 @@
 
     .next-btn {
         position: fixed;
-        bottom: 0;
+        bottom: 70px;
         right: 0;
         padding: 10px 50px;
     }
