@@ -288,7 +288,10 @@ const CheckOut = () => {
             onMouseDown={startSwipe}
             onMouseMove={onSwipe}
             onMouseUp={endSwipe}
-            onMouseLeave={endSwipe}
+
+            onTouchStart={startSwipe}
+            onTouchMove={onSwipe}
+            onTouchEnd={endSwipe}
           >
             <span className="arrow">
               <FaArrowRight />
