@@ -54,7 +54,7 @@
     }
 
     .menu-items {
-        max-height: 370px;
+       height: 450px;
         overflow-y: auto;
     }
 
