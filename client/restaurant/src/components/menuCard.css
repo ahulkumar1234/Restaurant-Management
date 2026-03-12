@@ -1,0 +1,73 @@
+.menu-card {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 500px;
+    overflow-x: auto;
+}
+
+.menu-card::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 15px;
+    height: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.price {
+    color: gray;
+}
+
+.stock {
+    color: gray;
+}
+
+.description {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.PrePTime {
+    color: gray;
+}
+
+.PrePTime span {
+    color: rgb(239, 78, 19);
+}
+
+.stock span {
+    color: black;
+    font-weight: 600;
+}
+
+.price span {
+    color: rgb(2, 156, 2);
+    font-weight: 600;
+}
+
+.loader{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

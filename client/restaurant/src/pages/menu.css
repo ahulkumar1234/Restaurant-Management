@@ -1,0 +1,10 @@
+.menu-page {
+    margin: 10px 20px;
+    display: flex;
+}
+
+.menu-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

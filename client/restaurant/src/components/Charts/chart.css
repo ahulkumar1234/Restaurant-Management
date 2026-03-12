@@ -1,0 +1,48 @@
+.donut-chart {
+    width: 99px;
+    height: 98px;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.progress-row {
+    font-size: 12px;
+    display: flex;
+}
+
+.progress-row span {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    color: #BAB9BF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 124px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 6px;
+}
+
+.progress-fill.take {
+    background: #5B5B5B;
+}
+
+.progress-fill.served {
+    background: #828282;
+}
+
+.progress-fill.dine {
+    background: #2C2C2C;
+}

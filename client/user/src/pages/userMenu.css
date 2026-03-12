@@ -1,0 +1,135 @@
+@media (max-width:768px) {
+    .menu-container {
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: #231100;
+    }
+
+    .heading p {
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .heading h1 {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .menu-heading {
+        color: #2F2F2F;
+    }
+
+    .search-inp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .search-inp input {
+        width: 75%;
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        background-color: #F0F5F3;
+        padding: 0 65px;
+        font-size: 20px;
+    }
+
+    .search-inp input::placeholder {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .search-inp img {
+        position: absolute;
+        left: 25px;
+    }
+
+    .menu-items {
+        max-height: 370px;
+        overflow-y: auto;
+    }
+
+    .menu-items::-webkit-scrollbar {
+        display: none;
+    }
+
+    .next-btn {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px 50px;
+    }
+
+    .next-btn button {
+        width: 132px;
+        height: 39px;
+        border-radius: 15px;
+        border: none;
+        background-color: #505050;
+        color: #FEFEFE;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .form {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.384);
+        z-index: 10;
+        /* display: none; */
+    }
+
+    .inputs {
+        width: 300px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.267);
+        box-shadow: 1px 1px 15px 1px #8888883b;
+        padding: 35px;
+        border-radius: 15px;
+        gap: 10px;
+        z-index: 99;
+        border: #5050503a solid 1px;
+    }
+
+    .inputs input {
+        border: #5050503a solid 1px;
+        outline: none;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .inputs h1 {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .order-btn {
+        margin: auto;
+        padding: 12px 25px;
+        border: none;
+        background-color: #231100;
+        color: #FEFEFE;
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,23 @@
+.success-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4BB543;
+    color: #FFFFFF;
+}
+.success-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.success-icon{
+    font-size: 100px;
+}
+.redirect{
+   position: absolute;
+   bottom: 0;
+   font-size: 13px;
+}
