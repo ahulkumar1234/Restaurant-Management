@@ -118,7 +118,7 @@ const UserMenu = () => {
                     <p>Place your order here</p>
                 </div>
                 <div className="search-inp">
-                    <img src="src/assets/search-button.png" alt="" />
+                    <img src="/assets/search-button.png" alt="" />
                     <input
                         type="text"
                         placeholder="Search"
