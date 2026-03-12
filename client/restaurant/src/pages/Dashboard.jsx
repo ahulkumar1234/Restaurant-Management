@@ -209,7 +209,7 @@ const Dashboard = () => {
                         </div>
 
                         {/* chefs list table */}
-                        <div className={`chefs ${!isMatch("Chef Name") ? "blur" : ""}`}>
+                        <div className={`chefs `}>
                             <table className="table-chefs">
                                 <thead>
                                     <tr>
