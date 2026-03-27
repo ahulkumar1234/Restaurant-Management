@@ -31,6 +31,7 @@ const tableCreate = async (req, res) => {
             seats,
             isReserved
         })
+        
         res.status(201).json({
             success: true,
             message: "Table Created Successfully!",

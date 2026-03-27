@@ -3,10 +3,13 @@ const orderModel = require("../model/order.model");
 const tableModel = require("../model/table.model");
 
 
+
+
+
 const getAnalytics = async (req, res) => {
   try {
 
-  
+
     const totalOrders = await orderModel.countDocuments();
 
     const revenueResult = await orderModel.aggregate([
@@ -19,7 +22,6 @@ const getAnalytics = async (req, res) => {
     ]);
 
     const totalRevenue = revenueResult[0]?.totalRevenue || 0;
-
 
     const uniqueClients = await orderModel.distinct("phone");
     const totalClients = uniqueClients.length;
@@ -41,6 +43,7 @@ const getAnalytics = async (req, res) => {
 
 const getOrderSummary = async (req, res) => {
   try {
+
     const { filter } = req.query;
 
     let startDate = new Date();
@@ -85,6 +88,7 @@ const getOrderSummary = async (req, res) => {
   }
 };
 
+
 const chefAnalytics = async (req, res) => {
   try {
     const chefs = await chefModel.find();
@@ -92,9 +96,7 @@ const chefAnalytics = async (req, res) => {
     const chefStats = [];
 
     for (let chef of chefs) {
-      const count = await orderModel.countDocuments({
-        chefId: chef._id
-      });
+      const count = await orderModel.countDocuments({ chefId: chef._id });
 
       chefStats.push({
         name: chef.name,
