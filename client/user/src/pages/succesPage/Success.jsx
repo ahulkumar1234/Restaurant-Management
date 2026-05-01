@@ -25,15 +25,15 @@ const Success = () => {
 
   }, [navigate]);
 
-    return (
-        <div className="success-container">
-            <div className="success-card">
-                <h1>Thank you for your Order!</h1>
-                <FaCheckCircle className="success-icon"/>
-            </div>
-            <p className="redirect">Redirecting in {time} seconds...</p>
-        </div>
-    );
+  return (
+    <div className="success-container">
+      <div className="success-card">
+        <h1>Thank you for your Order!</h1>
+        <FaCheckCircle className="success-icon" />
+      </div>
+      <p className="redirect">Redirecting in {time} seconds...</p>
+    </div>
+  );
 };
 
 export default Success;
